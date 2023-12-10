@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    height: 100vh;
+    color: white;
+    font-family: "Aclonica", sans-serif;
+}
+
+#content {
+    height: 100%;
+}
+
+#banner {
+    height: 14%;
+    padding: 20px;
+    background-color: rgba(165, 73, 42);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#restaurant {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    font-size: 50px;
+}
+
+#motto {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#tab-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tab {
+    width: 100px;
+    font-weight: bold;
+}
+
+.tab:hover {
+    transform: scale(1.1);
+    color: rgb(232, 199, 100);
+}
+
+#main {
+    height: 86%;
+}
+
+#home {
+    height: 100%;
+    background-image: url("./images/steaks.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-right: 40px;
+    font-family: "Roboto";
+    font-style: italic;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+#pitch {
+    width: 60%;
+}
+
+#quoted {
+    padding-right: 40px;
+}
+
+#menu-container {
+    height: 100%;
+    background-color: bisque;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+
+#menu-container > span {
+    font-size: 20px;
+    color: rgba(165, 73, 42);
+}
+
+.category {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.menu-item > img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.menu-item > span {
+    align-self: center;
+    color: rgba(165, 73, 42);
+    font-family: "Aclonica", sans-serif;
+}
+
+#info-container {
+    height: 100%;
+    color: rgba(165, 73, 42);
+    font-family: Roboto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+}
+
+#location {
+    width: 500px;
+    height: auto;
+    align-self: center;
+}
+
+#schedule {
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hours {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+#item {
+    height: 100%;    
+    background-color: bisque;
+    color: rgba(165, 73, 42);
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+    color: rgb(232, 199, 100);
+}
